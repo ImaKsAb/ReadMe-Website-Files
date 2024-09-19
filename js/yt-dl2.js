@@ -1,12 +1,12 @@
 
-  document.getElementById("loginButton").addEventListener("click", function() {
+  function loginButton() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
     google.script.run
       .withSuccessHandler(handleLoginResponse)
       .handleLogin(username, password);
-  });
+  }
 
   
   function loadPage1() {
