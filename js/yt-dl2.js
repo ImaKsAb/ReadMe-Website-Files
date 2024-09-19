@@ -30,11 +30,10 @@
       .withSuccessHandler(displayData)
       .loadYouTubeDataFromServer(searchTerm);
   }
-
-  document.getElementById("searchButton").addEventListener("click", function() {
+  function searchButton() {
     const searchTerm = document.getElementById("search").value;
     loadYouTubeData(searchTerm);
-  });
+  }
 
   function displayData(data) {
     const container = document.getElementById("data-table");
