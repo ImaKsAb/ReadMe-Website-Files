@@ -1197,7 +1197,7 @@ sup {
 }
 a {
   color: rgb(255, 75, 75);
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 a:hover {
   color: rgb(255, 0, 0);
